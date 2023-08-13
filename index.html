@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamburins 공식</title>
+  <link rel="stylesheet" href="style/index2.css">
+  <!-- <link rel="stylesheet" href="style/mobile_index.css"> -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div class="pc_all">
+    <!-- skipNavi -->
+    <div id="skipNavi"><a href="#container">본문 바로가기</a></div>
+    <!-- //skipNavi -->
+
+    <!-- 상단배너 -->
+    <div id="banner">
+      <div id="ban_mid">
+        <img src="./image/left_icon.png" width="20px" height="20px" alt="">
+        <div id="ban_text">
+            <a href="#"> 퍼퓸 50,94mL 구매 시 '퍼퓸 미니 디스커버리세트' 증정</a>
+            <a href="#"> 모든 제품 구매 시 손소독제 '000 30mL' 증정</a>
+        </div>
+        <img src="./image/right_icon.png" width="20px" height="20px" alt="">
+      </div>
+    </div>
+    <!-- //상단배너 -->
+    <div class="aside_bg"></div>
+    <!-- 햄버거 메뉴 -->
+    <aside class="ham_gnb">
+      <ul>
+        <li><a href="#">베스트셀러</a></li>
+        <li><a href="#">선물 추천</a></li>
+        <li><a href="#">매장 보기</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">문의하기</a></li>
+        <li><a href="#">마이페이지</a></li>
+        <li><select name="Language" id="language">
+          <option value="selected">Shop in KR</option>
+          <option value="kr">KR</option>
+          <option value="cn">CN</option>
+          <option value="en">EN</option>
+        </select></li>
+      </ul>
+      <button>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" xml:space="preserve">
+          <rect x="9.25" y="2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1421 10)" width="1.5" height="16"></rect>
+          <rect x="2" y="9.25" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1421 10)" width="16" height="1.5"></rect>
+        </svg>
+      </button>
+    </aside>
+    <!-- //햄버거 메뉴 -->
+    <!-- header -->
+    <header id="header">
+      <!-- header inner -->
+      <div class="header_inner">
+        <h1 class="logo"><a href="index.html" target="_self"><img src="image/logo.jpeg" alt="Tamburins 로고"></a></h1>
+        <!-- 주메뉴 -->
+        <nav class="gnb">
+          <h2 class="blind">주메뉴</h2>
+          <ul class="mainMenu">
+            <li><a href="#">제품 보기</a></li>
+            <li><a href="#">베스트셀러</a></li>
+            <li><a href="#">선물 추천</a></li>
+            <li><a href="#">매장 보기</a></li>
+          </ul>
+          <!-- 탑메뉴 -->
+          <ul class="topMenu">
+            <li><select name="Language" id="language">
+              <option value="selected">Shop in KR</option>
+              <option value="kr">KR</option>
+              <option value="cn">CN</option>
+              <option value="en">EN</option>
+            </select></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">로그인</a></li>
+            <li class="shop_icon"><a href="#"><img src="image/shopping.png" width="18px" alt="장바구니"></a></li>
+            <li class="ham_icon"><a href="#"><img src="image/menu_icon.png" width="18px" alt="햄버거메뉴"></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- //header inner -->
+    </header>
+    <!-- //header -->
+
+    <!-- category list -->
+    <div class="category">
+      <h2 class="blind">카테고리 메뉴</h2>
+      <ul>
+        <li><a href="#"><img src="image/viewall.png" width="100" alt="전체보기"><span>전체보기</span></a></li>
+        <li><a href="#"><img src="image/bestseller.png" width="100" alt="베스트셀러"><span>베스트셀러</span></a></li>
+        <li><a href="#"><img src="image/harvestsoap.png" width="100" alt="퍼품비누"><span>퍼품비누</span></a></li>
+        <li><a href="#"><img src="image/balm.png" width="100" alt="퍼품 밤"><span>퍼품 밤</span></a></li>
+        <li><a href="#"><img src="image/candle.png" width="100" alt="향 오브젝트"><span>향 오브젝트</span></a></li>
+        <li><a href="#"><img src="image/perfume.png" width="100" alt="퍼퓸"><span>퍼퓸</span></a></li>
+        <li><a href="#"><img src="image/shwry.png" width="100" alt="샤워리바디"><span>샤워리바디</span></a></li>
+        <li><a href="#"><img src="image/OAcandle.png" width="100" alt="올팩티브 캔들"><span>올팩티브 캔들</span></a></li>
+        <li><a href="#"><img src="image/shellX.png" width="100" alt="퍼퓸핸드"><span>퍼퓸핸드</span></a></li>
+        <li><a href="#"><img src="image/tube-hand.png" width="100" alt="튜브핸드"><span>튜브핸드</span></a></li>
+        <li><a href="#"><img src="image/handbody.png" width="100" alt="핸드앤바디"><span>핸드앤바디</span></a></li>
+        <li><a href="#"><img src="image/chain-hand.png" width="100" alt="체인 핸드"><span>체인 핸드</span></a></li>
+        <li><a href="#"><img src="image/sanitizer.png" width="100" alt="손소독제"><span>손 소독제</span></a></li>
+        <li><a href="#"><img src="image/giftset.png" width="100" alt="선물추천"><span>선물추천</span></a></li>
+        <li><a href="#"><img src="image/sample-kit.png" width="100" alt="샘플키트"><span>샘플키트</span></a></li>
+        <li><a href="#"><img src="image/multi-fragrance.png" width="100" alt="멀티프래그런스"><span>멀티프래그런스</span></a></li>
+      </ul>
+    </div>
+
+    <!-- container -->
+    <main id="container">
+      <div class="content_title">
+        <h3 class="inner_page">베스트셀러 <span>(24)</span></h3>
+      </div>
+      <!-- container inner -->
+      <div class="container_inner">
+        <!-- 상품 리스트 -->
+        <div class="product_list">
+          <ul>
+            <li>
+              <a href="product1.html" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod01.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">퍼퓸핸드 베스트 향</li>
+                  <li class="prod_name"> 퍼퓸핸드 미니 듀오 세트 베스트 (FEY9+VEIN)</li>
+                  <li class="prod_price_spec">
+                      <span>33,500 원</span>
+                      <span>15mL*2</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod02.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">진득한 카모마일 | 부드러운 나무결 | 머스크</li>
+                  <li class="prod_name">퍼퓸 밤 카모</li>
+                  <li class="prod_price_spec">
+                      <span>46,500 원</span>
+                      <span>6.5g</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod03.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">퍼퓸의 10가지 향</li>
+                  <li class="prod_name">퍼퓸 디스커버리 세트</li>
+                  <li class="prod_price_spec">
+                      <span>42,000 원</span>
+                      <span>2mL*10ea</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod04.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">진득한 카모마일 | 부드러운 나무결 | 머스크</li>
+                  <li class="prod_name">퍼퓸 카모</li>
+                  <li class="prod_price_spec">
+                      <span>36,500 원</span>
+                      <span>10mL</span>
+                  </li>
+                  <li class="prod_size">+3 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod05.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">진득한 카모마일 | 부드러운 나무결 | 머스크</li>
+                  <li class="prod_name">퍼퓸 쉘 엑스 카모</li>
+                  <li class="prod_price_spec">
+                      <span>32,000 원</span>
+                      <span>30mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod06.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">샌달우드 | 패츌리 | 흙 내음</li>
+                  <li class="prod_name">손 소독제 000</li>
+                  <li class="prod_price_spec">
+                      <span>8,500 원</span>
+                      <span>30mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod07.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">진득한 카모마일 | 부드러운 나무결 | 머스크</li>
+                  <li class="prod_name">퍼퓸 카모</li>
+                  <li class="prod_price_spec">
+                      <span>139,000 원</span>
+                      <span>50mL</span>
+                  </li>
+                  <li class="prod_size">+3 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod08.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">샌달우드 | 패츌리 | 흙 내음</li>
+                  <li class="prod_name">퍼퓸드 핸드앤바디 워시 000</li>
+                  <li class="prod_price_spec">
+                      <span>32,000 원</span>
+                      <span>250mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod09.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">이슬을 머금은 풋사과 | 화이트 튤립 | 샌달우드</li>
+                  <li class="prod_name"> 퍼퓸 밤 라레</li>
+                  <li class="prod_price_spec">
+                      <span>46,000 원</span>
+                      <span>6.5g</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod10.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">월계수 잎 | 은방울꽃 | 정돈된 가죽</li>
+                  <li class="prod_name"> VEIN</li>
+                  <li class="prod_price_spec">
+                      <span>25,000 원</span>
+                      <span>65mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod11.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</li>
+                  <li class="prod_name">FEY9</li>
+                  <li class="prod_price_spec">
+                      <span>25,000 원</span>
+                      <span>65mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod12.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">화이트 샴페인 | 다즐링 티 | 크리미한 머스크</li>
+                  <li class="prod_name"> 퍼퓸 화이트다즐링</li>
+                  <li class="prod_price_spec">
+                      <span>36,000 원</span>
+                      <span>10mL</span>
+                  </li>
+                  <li class="prod_size">+3 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod13.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</li>
+                  <li class="prod_name"> FEY9</li>
+                  <li class="prod_price_spec">
+                      <span>18,000 원</span>
+                      <span>15mL</span>
+                  </li>
+                  <li class="prod_size">+2 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod14.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">손 소독제 세가지 향</li>
+                  <li class="prod_name">손 소독제 트리오(000+FEY9+7)</li>
+                  <li class="prod_price_spec">
+                      <span>24,500 원</span>
+                      <span>30mL*3</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod15.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">샤워리바디워시&로션</li>
+                  <li class="prod_name">바디듀오 BIGALICO</li>
+                  <li class="prod_price_spec">
+                      <span>68,000 원</span>
+                      <span>240mL+235mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod16.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">샌달우드 | 패츌리 | 흙 내음</li>
+                  <li class="prod_name">000</li>
+                  <li class="prod_price_spec">
+                      <span>23,000 원</span>
+                      <span>30mL</span>
+                  </li>
+                  <li class="prod_size">+2 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod17.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">로즈우드 | 코코넛 향 | 우아함</li>
+                  <li class="prod_name">7</li>
+                  <li class="prod_price_spec">
+                      <span>32,000 원</span>
+                      <span>65mL</span>
+                  </li>
+                  <li class="prod_size">+2 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod18.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">로즈우드 | 코코넛 향 | 우아함</li>
+                  <li class="prod_name">퍼퓸드 핸드앤바디 워시 7</li>
+                  <li class="prod_price_spec">
+                      <span>32,500 원</span>
+                      <span>250mL</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod19.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">회귀의 향 | 나무껍질의 눈물 | 내적 평온</li>
+                  <li class="prod_name">MULBERRY LEAVES</li>
+                  <li class="prod_price_spec">
+                      <span>28,900 원</span>
+                      <span>40g</span>
+                  </li>
+                  <li class="prod_size">+2 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod20.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">씁쓸한 오렌지 | 시더우드 | 달콤한 리코라이스</li>
+                  <li class="prod_name">바디로션 BIGALICO</li>
+                  <li class="prod_price_spec">
+                      <span>38,000 원</span>
+                      <span>235mL</span>
+                  </li>
+                  <li class="prod_size">+2 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod21.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">퍼퓸핸드 7가지 향</li>
+                  <li class="prod_name">퍼퓸핸드 미니 7 세트</li>
+                  <li class="prod_price_spec">
+                      <span>107,000 원</span>
+                      <span>15mL*7</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod22.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">지중해의 베르가못 | 쌉싸래한 청귤 | 샌달우드</li>
+                  <li class="prod_name">퍼퓸 비누 버가샌달</li>
+                  <li class="prod_price_spec">
+                      <span>24,500 원</span>
+                      <span>140g</span>
+                  </li>
+                  <li class="prod_size">+1 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod23.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">따뜻한 공기 | 오렌지 껍질 | 머스크</li>
+                  <li class="prod_name">퍼퓸 쏘,선셋</li>
+                  <li class="prod_price_spec">
+                      <span>36,500 원</span>
+                      <span>10mL</span>
+                  </li>
+                  <li class="prod_size">+3 Size</li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_self">
+                <div class="prod_thumbnail">
+                    <img src="./image/prod24.jpeg" width="100%" alt="">
+                </div>
+                <ul class="prod_info">
+                  <li class="prod_desc">물안개 낀 숲 | 젖은 나무 | 캐시미어 우드</li>
+                  <li class="prod_name">바디워시 FOG</li>
+                  <li class="prod_price_spec">
+                      <span>52,000 원</span>
+                      <span>470mL</span>
+                  </li>
+                  <li class="prod_size">+2 Size</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- //상품 리스트 -->
+      </div>
+      <!-- //container inner -->
+    </main>
+    <!-- //container -->
+    <!-- sitemap -->
+    <div class="site_map">
+      <h4 class="blind">사이트맵</h4>
+      <ul>
+        <li><a href="#">선물 추천</a>
+          <ul>
+            <li><a href="#">온라인 서비스</a></li>
+          </ul>
+        </li>
+        <li><a href="#">고객센터</a>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">주문 배송 조회</a></li>
+            <li><a href="#">적립금 현황</a></li>
+            <li><a href="#">고객서비스</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">1:1 문의하기</a></li>
+          </ul>
+        </li>
+        <li><a href="#">소셜</a>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Kakaotalk</a></li>
+            <li><a href="#">Weibo</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- //sitemap -->
+    <!-- footer -->
+    <footer id="footer">
+      <p class="company_info">
+        주&#41;아이아이컴바인드 | 사업자등록번호: 119-86-32910 | 대표자: 김한국 | 서울특별시 마포구 어울마당로5길 41 | 대표번호: 1644-1246 | 이메일: cs@tamburins.com
+        <br>
+        개인정보 보호 책임자: 정태호 | 호스팅 서비스 사업자: AWS | 통신판매업신고: 제 2014-서울마포-1050 호 <a href="#">(사업자정보확인)</a>
+      </p>
+      <p class="guarantee">
+          고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. <a href="#">서비스 가입사실 확인</a>
+      </p>
+      <span>&#169; 탬버린즈</span>
+    </footer>
+  </div>
+  <!-- pc_all -->
+</body>
+</html>

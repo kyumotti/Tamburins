@@ -1,0 +1,76 @@
+@media (max-width:800px) {
+    /* 메인메뉴 */
+    #header {padding:0 15px ;}
+    #header_1 a {display:none;}
+    #header_1 >a:first-child {display: block;}
+    #header_1 {justify-content: start;}
+
+    #header_2 a, select { display: none;}
+    #header_2 > .menu_icon, #header_2 > .shop_icon {display: block;}
+    #header_2 {justify-content: end;}
+    #header_2 > .menu_icon {margin-left: 20px;}
+
+    #ban_mid{width: 70%;}
+
+    /* 카테코리 */
+    .category_list {padding: 0 15px;}
+    
+    /* 상품리스트 */
+    #list_title {padding-left: 15px;}
+    .product_row1 {flex-flow: row wrap;}
+
+    .product_box {width: 49%;}
+
+    .inner_page {padding: 0;}
+
+
+    /* footer 시작 */
+    /* pc footer 숨김 */
+    .footer{display: none;}
+
+    /* mobile footer */
+    .m_footer{display: block;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: start;
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #c4c2c2;
+            border-bottom: 1px solid #c4c2c2;
+            }
+
+
+    .m_footer_box {
+        /* padding:  0 10px; */
+        /* background-color: hotpink; */
+        border-bottom: 1px solid #c4c2c2;;
+    } 
+
+    /* 아코디언 푸터  */
+    .m_footer_box h4 { padding: 15px 13px;
+        /* background-color: coral; */
+        width: 100%;
+        text-align: left;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;}
+    .m_footer_box a {
+        font-size: 12px;
+        padding: 15px 13px;
+        width: 100%;
+        /* background-color: blanchedalmond; */
+    }
+
+    .m_foot_detail{display: none;
+        overflow: hidden;}
+
+
+    /* 푸터 하단 */
+    .footer_info {padding: 23px 23px 10px;
+        margin: 0 auto;}
+
+
+
+
+
+}

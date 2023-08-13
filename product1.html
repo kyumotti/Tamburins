@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼퓸핸드 미니 듀오 세트 베스트</title>
+    <link rel="stylesheet" href="./style/product1.css">
+    <link rel="stylesheet" href="./style/mobile_product1.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+   <div id="pc_all">
+        <div id="header_all">
+            <!-- 상단배너 -->
+            <div id="banner">
+                <div id="ban_mid">
+                    <img src="./image/left_icon.png" width="20px" height="20px" alt="">
+                    <div id="ban_text">
+                        <a href="#"> 퍼퓸 50,94mL 구매 시 '퍼퓸 미니 디스커버리세트' 증정</a>
+                        <a href="#"> 모든 제품 구매 시 손소독제 '000 30mL' 증정</a>
+                    </div>
+                    <img src="./image/right_icon.png" width="20px" height="20px" alt="">
+                </div>
+            </div>
+        
+            <!-- 메인메뉴 -->
+            <div id="header">
+                    
+                <div id="header_1">
+                    <a id="logo" href="index.html" target="self"><img src="./image/black_logo.png" width="150px"   alt=""></a>
+                    <a href="#"><span>제품 보기</span></a>
+                    <a href="#"><span>베스트셀러</span></a>
+                    <a href="#"><span>선물 추천</span></a>
+                    <a href="#"><span>매장 보기</span></a>
+                </div>
+                <div id="header_2">
+                    <select>
+                        <option selected>Shop in KR</option>
+                        <option> CN </option>
+                        <option> EN </option>
+                    </select>
+                    <a href="#"><span>마이페이지</span></a>
+                    <a href="#"><span>로그인</span></a>
+                    <a href="#" class="shop_icon">
+                        <img src="./image/shopping.png" width="18px" alt="">
+                    </a>
+                    <a href="#" class="menu_icon">
+                        <img src="./image/menu_icon.png" width="18px" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+            <!-- 상세 페이지 시작 -->
+            <div id="detail_container">
+                <!-- pc 상품 이미지 -->
+                <div class="detail_img_wrap">
+                    <div id="detail_img">
+                        <img src="./image/detail_img1.jpeg" width="100%" alt="">
+                        <img src="./image/detail_img2.jpeg" width="100%" alt="">
+                        <img src="./image/detail_img3.jpeg" width="100%" alt="">
+                    </div>
+                </div>
+                <!-- mobile 상품 이미지 -->
+                <div class="m_detail_img_wrap">
+                    <div id="m_detail_img">
+                        <img src="./image/detail_img1.jpeg" width="100%" alt="">
+                    </div>
+                    <div id="m_detail_img">
+                        <img src="./image/detail_img2.jpeg" width="100%" alt="">
+                    </div>
+                    <div id="m_detail_img">
+                        <img src="./image/detail_img3.jpeg" width="100%" alt="">
+                    </div>
+                    <div class="arrowLeft">
+                        <img src="./image/arrowL.png" width="20" alt="">
+                    </div>
+                    <div class="arrowRight">
+                        <img src="./image/arrowR.png" width="20" alt="">
+                    </div>
+                </div>
+
+                <!-- 자바스크립트 상품 이미지 -->
+                <script>
+                    var slide = document.querySelector(".m_detail_img_wrap");
+
+                    
+                    var arrowL = document.querySelector(".arrowLeft");
+                    var arrowR = document.querySelector(".arrowRight");
+
+                    var slideItems = document.querySelectorAll("#m_detail_img");
+                    var maxSlide = slideItems.length;
+                    var currSlide = 0
+
+                    function ani_slideR(){
+                        currSlide++;
+                        if(currSlide < maxSlide) {
+                            // var offset = slideWidth * (currSlide-1);
+                            var offset = currSlide*100;
+                            slideItems.forEach((i) => {
+                                i.setAttribute("style",`transform:translateX(${-offset}%)`)
+                            });
+
+                        } else {
+                            currSlide--
+                        }
+                    };
+                    function ani_slideL(){
+                        currSlide--;
+                        if(currSlide >= 0) {
+                            // var offset = slideWidth * (currSlide-1);
+                            var offset = currSlide*100;
+                            slideItems.forEach((i) => {
+                                i.setAttribute("style",`transform:translateX(${-offset}%)`)
+                            });
+                        } else {
+                            currSlide++;
+                        }
+                    }
+
+
+                    arrowL.addEventListener("click",ani_slideL);
+                    arrowR.addEventListener("click",ani_slideR);
+                    
+
+                </script>
+
+
+                <!-- 상품 상세 정보 -->
+                <div id="detail_info">
+                    <div id="category_name">선물추천</div>
+                    <div id="detail_top">
+                        <div id="product_name">퍼퓸핸드 미니 듀오 세트 베스트 (FEY9+VEIN)</div>
+                        <div id="product_price">33,500원</div>
+                    </div>
+                    <div id="product_size">
+                        <div class="size_wrap">
+                            <div id="size_thumb">
+                                <img src="./image/detail_img1.jpeg" width="100%" alt="">
+                            </div>
+                            <div id="size_info">15mL*2</div>
+                        </div>
+                    </div>
+                    <div id="keyword">퍼퓸핸드 베스트 향</div> 
+                    <div id="description">
+                        <p>
+                        [FEY9]<br>
+                        무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한 <br>
+                        열매 안에서 꽃을 피우는 무화과는 절제된 향취를 가집니다. 잎과 과육의 달콤 씁쓸함이 더해져 향은 더욱 풍부해지고, 엠브레트 씨앗과 엠버의 부드러운 조화는 깊이감 있는 여운을 남기며 향의 매력에 빠져들게 만듭니다.
+                        <br><br>
+                        [VEIN]<br>
+                        월계수 잎 | 은방울꽃 | 정돈된 가죽<br>
+                        가볍게 감싸는 월계수 잎과 은방울꽃의 깨끗함 뒤로, 정돈된 가죽 향이 약간의 긴장감을 선명하게 유지해 줍니다. 가죽의 무게감은 잔향의 머스크와 만나 눈부신 대조를 이루며 한층 부드러워진 맥박의 잔잔한 템포를 느끼게 합니다.
+                        <br><br>
+                        향수처럼 사용할 수 있는 크림 타입 퍼퓸.
+                        </p>
+                    </div>    
+                    <!-- 장바구니 버튼 -->
+                    <div id="buy">
+                        <button type="button" class="buy_button">장바구니에 담기</button>
+                    </div>
+
+                    <!-- 아코디언 메뉴 -->
+                    <div id="accordion_wrap">
+                        <div class="que">
+                            <span>온라인 익스클루시브 혜택</span>
+                            <div class="arrow_wrap">
+                                <span class="arrow_top">▲</span>
+                                <span class="arrow_bottom">▼</span>
+                            </div>
+                        </div>
+                        <div class="anw">
+                            <span>탬버린즈는 고객님들께 빠른 배송 및 반품과 최고의 경험을 제공하기 위해 언제나 세심한 주의를 기울입니다. 고객님을 위한 익스클루시브 서비스를 경험해보세요.
+                                <br><br>
+                                · 회원가입 및 카카오톡 플러스 친구 추가 시 바로 사용 가능한 3,000원 혜택<br>
+                                · 구매 금액의 2% 적립<br>
+                                · 생일 축하 5,000 포인트 혜택 (1년 이내 구매 이력 있을 시)
+                            </span>
+                        </div>
+                        <div class="que">
+                            <span>제품 세부 정보</span>
+                            <div class="arrow_wrap">
+                                <span class="arrow_top">▲</span>
+                                <span class="arrow_bottom">▼</span>
+                            </div>
+                        </div>
+                        <div class="anw">
+                            <span class="detail_bold">전성분</span>
+                            [FEY9]<br>
+                            정제수, 글리세린, 카프릴릭/카프릭트라이글리세라이드, 부틸렌글라이콜, 세테아 릴알코올, C12-15알킬벤조에이트, 아이소도데케인, 향료, 1,2-헥 산다이올, 글리세릴스테아레이트, 베헤닐알코올, 시어버터, 피 이지-100스테아레이트, 다이메티콘, 에틸헥실글리세린, 알루미늄전분옥테닐석시네이트, 잔탄검, 암모늄아크릴로일다이메틸 타우레이트/브이피코폴리머, 세틸알코올, 하이드롤라이즈드 호호바에스터, 아데노신, 판테놀, 토코페릴아세테이트, 호호바에스터, 소듐하이알루로네이트, 병풀추출물, 신나밀알코올, 파네솔, 리모넨, 리날룰.
+                            <br><br>
+                            [VEIN]<br>
+                            정제수, 글리세린, 카프릴릭/카프릭트라이글리세라이드, 부틸렌글라이콜, 세테 아릴알코올, C12-15알킬벤조에이트, 아이소도데케인, 향료, 1,2-헥산다이올, 글리세릴스테아레이트, 베헤닐알코올, 시어버터, 피이지-100스테아레이트, 다이메티콘, 에틸헥실글리세린, 알루미늄전분옥테닐석시네이트, 잔탄검, 암모늄아크릴로일 다이메틸타우레이트/브이피코폴리머, 세틸알코올, 하이드롤 라이즈드호호바에스터, 아데노신, 판테놀, 토코페릴아세테이트, 호호바에스터, 소듐하이알루로네이트, 병풀추출물, 시트로넬올, 유제놀, 제라니올, 헥실신남알, 아이소유제놀, 리모넨, 리날룰.
+                            <br><br><br>
+
+                            <span class="detail_bold">사용방법</span>
+                            더 쉘 퍼퓸핸드의 쉘 케이스는 특수한 이중구조 용기와 에어리스 펌프 시스템으로 사용하는 동안 내용물이 변질되지 않게끔 외부 공기와의 접촉을 최대한 차단합니다.
+                            <br><br>
+                            쉘 케이스의 뚜껑을 열어 버튼을 세로방향으로 손등에 부드럽게 눌러보세요. 깔끔한 애티튜드로 기능하는 새로운 에어리스 펌프 시스템이 잔여 내용물을 남기지 않고 끝까지 사용할 수 있도록 도와줍니다.
+                            <br><br>
+
+                            <span class="detail_bold">사용할 때의 주의사항</span>
+                            1.화장품 사용시 또는 사용후 직사광선에 의하여 사용부위가 붉은반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것 2.상처가 있는 부위 등에는 사용을 자제할 것 3.보관 및 취급시의 주의사항 1) 어린이의 손이 닿지 않는 곳에 보관할 것 2)직사광선을 피해서 보관할 것 *본 제품은 공정거래위원회 고시 소비자분쟁해결기준에 의거 교환 또는 보상받을 수 있습니다.
+                            <br><br>
+
+                            <span class="detail_bold">사용기한</span>
+                            사용기한 36개월(상품 발송일 기준으로 사용기한이 12개월 이상 남은 상품만을 판매합니다.)
+                            <br><br>
+
+                            <span class="detail_bold">제조업자</span>
+                            주식회사 정코스
+                        </div>
+                        <div class="que">
+                            <span>배송 & 반품</span>
+                            <div class="arrow_wrap">
+                                <span class="arrow_top">▲</span>
+                                <span class="arrow_bottom">▼</span>
+                            </div>
+                        </div>
+                        <div class="anw">
+                            3만원 이상 구매하실 경우 배송 비용은 무료입니다.<br><br>
+
+                            <span class="color_red">주문일로부터 1-2 영업일 이내 출고됩니다.</span>
+                            <br>
+                            배송은 지역 택배사 사정에 따라 약간의 지연이 생길 수 있습니다. 배송이 시작되면 구매자에게는 이메일, 수령인에게는 카카오 알림톡으로 배송 정보를 전송해 드립니다.
+                            <br>
+                            CJ대한통운 <a href="https://www.cjlogistics.com" id="cjemail">(https://www.cjlogistics.com)</a>
+                            <br><br>
+
+                            *상품 혹은 증정품의 포장(랩핑)을 개봉 및 훼손한 경우 반품이 불가합니다.<br>
+                            *단순 변심 또는 주문 실수로 인한 교환이 불가합니다. 신중한 구매 부탁드립니다.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 추천상품 -->
+            <div id="recommend_list">
+                <p>추천상품<p>
+                <div class="product_row1">
+                    <div class="product_box">
+                        <a href="#" target="_self">
+                            <div class="prod_thumbnail">
+                                <img src="./image/prod05.jpeg" width="100%" alt="">
+                            </div>
+                            <div class="prod_info">
+                                <div class="prod_desc">진득한 카모마일 | 부드러운 나무결 | 머스크</div>
+                                <div class="prod_name"> 퍼퓸 쉘 엑스 카모</div>
+                                <div class="prod_price_spec">
+                                    <div>32,000 원</div>
+                                    <div>30mL</div>
+                                </div>
+                                <div class="prod_size">+1 Size</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product_box">
+                        <a href="#" target="_self">
+                            <div class="prod_thumbnail">
+                                <img src="./image/prod06.jpeg" width="100%" alt="">
+                            </div>
+                            <div class="prod_info">
+                                <div class="prod_desc">샌달우드 | 패츌리 | 흙 내음</div>
+                                <div class="prod_name"> 손 소독제 000</div>
+                                <div class="prod_price_spec">
+                                    <div>8,500 원</div>
+                                    <div>30mL</div>
+                                </div>
+                                <div class="prod_size">+1 Size</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product_box">
+                        <a href="#" target="_self">
+                            <div class="prod_thumbnail">
+                                <img src="./image/prod07.jpeg" width="100%" alt="">
+                            </div>
+                            <div class="prod_info">
+                                <div class="prod_desc">진득한 카모마일 | 부드러운 나무결 | 머스크</div>
+                                <div class="prod_name"> 퍼퓸 카모</div>
+                                <div class="prod_price_spec">
+                                    <div>139,000 원</div>
+                                    <div>50mL</div>
+                                </div>
+                                <div class="prod_size">+3 Size</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product_box">
+                        <a href="#" target="_self">
+                            <div class="prod_thumbnail">
+                                <img src="./image/prod08.jpeg" width="100%" alt="">
+                            </div>
+                            <div class="prod_info">
+                                <div class="prod_desc">샌달우드 | 패츌리 | 흙 내음</div>
+                                <div class="prod_name"> 퍼퓸드 핸드앤바디 워시 000</div>
+                                <div class="prod_price_spec">
+                                    <div>32,000 원</div>
+                                    <div>250mL</div>
+                                </div>
+                                <div class="prod_size">+1 Sizes</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- pc footer 시작 -->
+        <footer class="footer">
+            <div class="footer_box">
+                <h4>선물 추천</h4>
+                <a href="#"><span>온라인 서비스</span></a>
+            </div>
+            <div class="footer_box">
+                <h4>고객센터</h4>
+                <a href="#"><span>공지사항</span></a>
+                <a href="#"><span>주문 배송 조회</span></a>
+                <a href="#"><span>적립금 현황</span></a>
+                <a href="#"><span>고객서비스</span></a>
+                <a href="#"><span>자주 묻는 질문</span></a>
+                <a href="#"><span>1:1 문의하기</span></a>
+            </div>
+            <div class="footer_box">
+                <h4>소셜</h4>
+                <a href="#"><span>Instagram</span></a>
+                <a href="#"><span>Kakaotalk</span></a>
+                <a href="#"><span>Weibo</span></a>
+                <a href="#"><span>Facebook</span></a>
+            </div>
+        </footer>
+
+        <!-- mobile footer 시작 -->
+        <footer class="m_footer">
+            <div class="m_footer_box">
+                <div class="m_foot_title">
+                    <h4>선물 추천</h4>
+                </div>
+                <div class="m_foot_detail">
+                    <a href="#"><span>온라인 서비스</span></a>
+                </div>
+            </div>
+            <div class="m_footer_box">
+                <div class="m_foot_title">
+                    <h4>고객센터</h4>
+                 </div>
+                 <div class="m_foot_detail">
+                    <a href="#"><span>공지사항</span></a>
+                    <a href="#"><span>주문 배송 조회</span></a>
+                    <a href="#"><span>적립금 현황</span></a>
+                    <a href="#"><span>고객서비스</span></a>
+                    <a href="#"><span>자주 묻는 질문</span></a>
+                    <a href="#"><span>1:1 문의하기</span></a>
+                </div>
+            </div>
+            <div class="m_footer_box">
+                <div class="m_foot_title">
+                    <h4>소셜</h4>
+                </div>
+                <div class="m_foot_detail">
+                    <a href="#"><span>Instagram</span></a>
+                    <a href="#"><span>Kakaotalk</span></a>
+                    <a href="#"><span>Weibo</span></a>
+                    <a href="#"><span>Facebook</span></a>
+                </div>
+            </div>
+        </footer>
+        <div class="footer_info">
+            <div class="company_info">
+                주)아이아이컴바인드 | 사업자등록번호: 119-86-32910 | 대표자: 김한국 | 서울특별시 마포구 어울마당로5길 41 | 대표번호: 1644-1246 | 이메일: cs@tamburins.com
+                <br>
+                개인정보 보호 책임자: 정태호 | 호스팅 서비스 사업자: AWS | 통신판매업신고: 제 2014-서울마포-1050 호 <a href="#">(사업자정보확인)</a>
+            </div>
+            <div class="guarantee">
+                고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. <a href="#">서비스 가입사실 확인</a>
+            </div>
+            <div class="footer_bottom">© 탬버린즈</div>
+        </div>
+   </div>
+</body>
+</html>
